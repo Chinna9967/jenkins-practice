@@ -7,6 +7,11 @@ pipeline{
                 echo 'Building'
                 sh 'ls -ltr'
                 sh 'pwd'
+                sh '''
+                 ls -ltr
+                 pwd
+                 echo 'hello shell'
+                '''
             }
         }
         stage('Test'){
