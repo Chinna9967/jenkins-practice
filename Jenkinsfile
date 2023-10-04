@@ -22,7 +22,7 @@ pipeline{
         always{
             echo 'iam always running whether job is sucess or not'
         }
-        sucess{
+        success{
             echo 'iam running when job is success'
         }
         failure{
