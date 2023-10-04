@@ -10,7 +10,7 @@ pipeline{
                 sh '''
                  ls -ltr
                  pwd
-                 echo 'hello shell'
+                 echo 'hello shell to test webhook'
                 '''
             }
         }
