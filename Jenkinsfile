@@ -76,6 +76,14 @@ pipeline{
                 echo "Hello, ${PERSON}, nice to meet you."
             }
         }
+        stage('Deploy to production when condition'){
+            when{
+                environment name: 'USER', value: 'kashi'
+            }
+            steps{
+                echo "deploying to prod"
+            }
+        }
     }
     post{
         always{
